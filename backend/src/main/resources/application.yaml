@@ -8,9 +8,10 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-    properties:
-      hibernate:
-
 
 server:
   port: 8080
+
+jwt:
+  secret: insurecrmsecretkey12345678901234567890
+  expiration: 86400000
