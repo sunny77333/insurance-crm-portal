@@ -1,3 +1,16 @@
 spring:
-  application:
-    name: crm
+  datasource:
+    url: jdbc:mysql://localhost:3306/insurance_crm
+    username: root
+    password: sunny
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+
+
+server:
+  port: 8080
